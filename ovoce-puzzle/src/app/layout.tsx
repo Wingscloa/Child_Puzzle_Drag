@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="header flex justify-center">
+        {/* <div className="header flex justify-center">
         <Link href="/" className="m-1 cursor-pointer border bg-gray-300 rounded-lg hover:bg-gray-400 active:bg-gray-700 w-16 flex items-center justify-center">
           <AiFillHome/>
           <p className="p-1 align-middle hover:text-gray-200 active:text-gray-300 select-none text-sm text-center" >Home</p>
@@ -32,7 +32,7 @@ export default function RootLayout({
           <FaHistory/>
           <h1 className="p-1 align-middle hover:text-gray-200 active:text-gray-300 select-none text-sm text-center">History</h1>
         </Link>
-      </div>
+      </div> */}
       {children}
       </body>
     </html>

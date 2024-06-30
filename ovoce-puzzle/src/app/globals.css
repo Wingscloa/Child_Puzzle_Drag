@@ -8,3 +8,136 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.card-border {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 5rem;
+  border-radius: 12px;
+  background-color: #c4c4c4;
+  margin: 8px;
+}
+
+.card-border-select:hover{
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  scale: 1.05;
+}
+
+.card-border-select:active{
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  scale: 0.95;
+}
+
+.card-content{
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgb(242, 203, 247);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 75px;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.drop-card-border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 22px;
+  width: 4rem;
+}
+
+.game {
+  margin-top: 1.5rem;
+}
+
+.container-drag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.draggables{
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgb(251, 255, 134);
+  width: 19rem;
+  border: solid black 2.5px;
+  border-radius: 8px;
+}
+
+.draggables:hover{
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgb(242, 249, 31);
+  border-color: grey;
+}
+
+.img {
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  gap: 0.5rem;
+  height: 12rem;
+  margin-top: 2rem;
+}
+
+.agree{
+  width: 72px;
+  height: 72px;
+  background-color: rgb(87, 160, 87);
+  margin-right: 2rem;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.agree:hover{
+  background-color: green;
+}
+
+.disagree{
+  width: 72px;
+  height: 72px;
+  background-color: rgb(253, 89, 89);
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.disagree:hover{
+  background-color: red;
+}
+
+.svgAgree {
+  margin-left: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.test {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
