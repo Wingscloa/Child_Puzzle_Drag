@@ -1,5 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
+import Link from 'next/link'
 
 
 export default function Page() {
@@ -21,7 +22,16 @@ export default function Page() {
               <a style={{ fontSize: "18px" }} className="underline decoration-green-300 cursor-pointer" href="https://www.typescriptlang.org/docs/">TypeScript</a> a jejich knihoven.
             </p>
       </motion.div>
+
+
     </div>
+
+    <div className="flex self-center justify-center m-4">
+    <Link href="/game" type="button" className="bg-slate-600 w-16 hover:bg-slate-400 rounded-sm h-12  font-mono text-white hover:text-slate-200 text-center p-2">
+        Game
+    </Link>
+    </div>
+
     </>
   );
 }

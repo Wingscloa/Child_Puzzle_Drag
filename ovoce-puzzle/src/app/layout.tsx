@@ -4,10 +4,12 @@ import { AiFillHome } from "react-icons/ai";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { FaHistory } from "react-icons/fa";
 import Link from 'next/link'
-
+import Head from 'next/head'
+import Header from '../../components/Header/header'
+import Logo from '../../components/Logo/logo'
 
 export const metadata: Metadata = {
-  title: "Puzzle Drag",
+  title: "Drag Me",
   description: "Made by Wingscloa - https://github.com/Wingscloa",
 };
 
@@ -19,21 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <div className="header flex justify-center">
-        <Link href="/" className="m-1 cursor-pointer border bg-gray-300 rounded-lg hover:bg-gray-400 active:bg-gray-700 w-16 flex items-center justify-center">
-          <AiFillHome/>
-          <p className="p-1 align-middle hover:text-gray-200 active:text-gray-300 select-none text-sm text-center" >Home</p>
-        </Link>
-        <Link href="/game" className="m-1 cursor-pointer border bg-gray-300 rounded-lg hover:bg-gray-400 active:bg-gray-700 w-16 flex items-center justify-center">
-          <AiFillPlayCircle/>
-          <p className="p-1 align-middle hover:text-gray-200 active:text-gray-300 select-none text-sm text-center">Play</p>
-        </Link>
-        <Link href="/history" className="p-1 m-1 cursor-pointer border bg-gray-300 rounded-lg hover:bg-gray-400 active:bg-gray-700 w-18 flex items-center justify-center">
-          <FaHistory/>
-          <h1 className="p-1 align-middle hover:text-gray-200 active:text-gray-300 select-none text-sm text-center">History</h1>
-        </Link>
-      </div> */}
-      {children}
+        {/* <Head>
+          <title>My page title</title>
+        </Head> */}
+        {/* <Header />
+        <Logo /> */}
+        <div className="content">{children}</div>
       </body>
     </html>
   );

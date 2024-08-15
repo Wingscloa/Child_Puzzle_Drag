@@ -6,6 +6,11 @@ const nextConfig = {
                 protocol : 'https',
                 hostname : 'cdn-icons-png.flaticon.com',
                 port: '',
+            },
+            {
+                protocol : 'https',
+                hostname : 'i.pinimg.com',
+                port: '',
             }
         ]
     }
